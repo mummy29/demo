@@ -1,0 +1,41 @@
+@startuml
+skinparam linetype ortho
+
+entity User {
+id: sadas
+--
+name: desc
+desc: something
+}
+
+entity Person {
+id: sadas
+--
+name: desc
+desc: something
+}
+
+entity Student {
+id: sadas
+--
+name: desc
+desc: something
+}
+
+entity Teacher {
+id: sadas
+--
+name: desc
+desc: something
+}
+
+User ||--o{ Person
+User ||--o{ Student
+
+Person ||--o| Student
+Person ||--o| Teacher
+
+User ||--o{ Teacher
+Student }|--|{ Teacher
+
+@enduml
